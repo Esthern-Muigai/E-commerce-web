@@ -272,8 +272,8 @@ header.active{
  }
 
  .category .box-container .box img{
-    height: 100%;
-    width: 70%;
+    height: 80%;
+    width: 100%;
     object-fit: fill;
  }
 
@@ -301,8 +301,8 @@ header.active{
  .products .product-slider .slide{
      overflow: hidden;
      position: relative;
-     border: 1rem solid var(--light-color);
-     border-radius: .5rem;
+     border: .5rem solid var(--light-color);
+     border-radius: .4rem;
      background: var(--white-color);
  }
 
@@ -312,12 +312,12 @@ header.active{
 
  .products .product-slider .slide .image img{
     height: 50rem;
-    width:70%;
+    width:100%;
     object-fit: fill;
  }
 
  .products .product-slider .slide .content{
-    padding: 2rem;
+    padding: 5rem;
     border-top: .1rem solid var(--light-color);
  }
  .products .product-slider .slide .icons{
@@ -370,28 +370,28 @@ header.active{
     font-size: 1.5rem;
    text-decoration: line-through;
 }
-.products .products-slider .slide .content .stars i{
+.products .product-slider .slide .content .stars i{
     font-size: 2rem;
     color: var(--orange);
 }
-.products .products-slider .slide .content .stars span{
+.products .product-slider .slide .content .stars span{
     font-size: 2rem;
     color: var(--black-color);
     font-weight: 300;
 }
-.products .products-slider .slide .content h3{
+.products .product-slider .slide .content h3{
     color: var(--black-color);
     font-weight: normal;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
-.products .products-slider .slide .content .price{
+.products .product-slider .slide .content .price{
     color: var(--orange);
     font-weight: bolder;
     font-size: 2.5rem;
     padding: .5rem 0;
 }
-.products .products-slider .slide .content .price span{
+.products .product-slider .slide .content .price span{
     color: var(--black-color);
     font-weight: normal;
     font-size: 1.5rem;
@@ -407,9 +407,206 @@ header.active{
 }
 
 
+.featured .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.featured .box-container .box{
+    flex: 1 1 27rem;
+    background: var(--white-color);
+    border: 1rem solid var(--light-color);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.featured .box-container .box .image-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+.featured .box-container .box .image-container .small-image{
+    width: 20%;
+}
+.featured .box-container .box .image-container .big-image{
+    width: 80%;
+}
+.featured .box-container .box .image-container .small-image img{
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border: .1rem solid var(--light-color);
+    cursor: pointer;
+}
+.featured .box-container .box .image-container .big-image img{
+    width: 100%;
+}
+.featured .box-container .box .content{
+    padding: 1rem;
+    border-top: .1rem solid var(--light-color);
+}
+.featured .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black-color);
+}
+.featured .box-container .box .content .stars{
+    padding: .5rem 0;
+}
+.featured .box-container .box .content .stars i{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+.featured .box-container .box .content .stars span{
+    font-size: 1.5rem;
+    color: var(--orange);
+    font-weight: 300;
+}
+.featured .box-container .box .content p{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+.featured .box-container .box .content .price{
+    color: var(--orange);
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    font-weight: bolder;
+}
+.featured .box-container .box .content .price span{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+.deal .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;
+    border:.1rem solid var(--light-color);
+    background: var(--white-color);
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.deal .row .content{
+    flex: 1 1 40rem;
+    padding: 1rem;
+}
+.deal .row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+.deal .row .image img{
+    width: 100%;
+}
+.deal .row .discount{
+    font-size: 2rem;
+    color: var(--orange);
+}
+.deal .row .text{
+    font-size: 4rem;
+    color: var(--black-color);
+    padding: .5rem 0;
+}
+.deal .row .count-down{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: .5rem 0;
+}
+.deal .row .count-down h3{
+    color: var(--orange);
+    font-size: 4rem;
+}
+.deal .row .count-down span{
+    color: var(--light-color);
+    font-size:1.5rem;
+}
 
-
-
+.review .review-slider .slide{
+    background: var(--white-color);
+    border-radius: .5rem;
+    border: .1rem solid var(--light-color);
+    padding: 2rem;
+}
+.review .review-slider .slide .stars{
+    padding: 1rem 0;
+}
+.review .review-slider .slide i{
+   font-size: 2rem;
+   color: var(--orange);
+}
+.review .review-slider .slide p{
+    color: var(--black-color);
+    font-size:1.6rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+}
+.review .review-slider .slide .user{
+    padding-top: .5rem;
+    display: flex;
+    align-items: center;
+}
+.review .review-slider .slide .user img{
+    margin-right: 1.5rem;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review .review-slider .slide .user h3{
+    color: var(--black-color);
+    font-size: 2.5rem;
+}
+.review .review-slider .slide .user span{
+    color: var(--light-color);
+    font-size: 1.7rem;
+}
+.footer .footer-container{
+    background: var(--white-color);
+    border: .1rem solid var(--light-color);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .footer-container .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .footer-container .box-container .box h3{
+    color: var(--orange);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}    
+.footer .footer-container .box-container .box a{
+    display: block;
+    color: var(--black-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    font-weight: 300;
+}
+.footer .footer-container .box-container .box a:hover{
+    color: var(--orange);
+}
+.footer .footer-container .box-container .box img{
+    margin-top: 1rem;
+}
+.footer .footer-container .credit{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: -1rem solid var(--light-color); 
+    color: var(--black-color);
+    text-align: center;
+}
+.footer .footer-container .credit span{
+    color: var(--orange);
+}
 
 
 
